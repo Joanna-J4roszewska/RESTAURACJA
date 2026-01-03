@@ -1,0 +1,110 @@
+
+body {
+    background-color: #202020;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 60px; 
+}
+
+
+
+.article {
+    padding: 100px 20px 40px; /* 100px od góry, żeby nie wchodziło pod menu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Odstęp między sekcjami */
+}
+
+/* Karta z tekstem (efekt szkła) */
+.item {
+    background: rgba(0, 0, 0, 0.75); /* Ciemne półprzezroczyste tło */
+    backdrop-filter: blur(10px);     /* Rozmycie tła pod spodem */
+    padding: 40px;                   /* Dużo miejsca w środku */
+    border-radius: 15px;             /* Zaokrąglone rogi */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Delikatna ramka */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Cień pod kartą */
+    
+    max-width: 800px; /* Nie szersze niż galeria */
+    width: 100%;
+    text-align: center; /* Wyśrodkowanie tekstu */
+    color: #e0e0e0;     /* Lekko szary biały (bardziej elegancki) */
+}
+
+/* Nagłówki (np. "O nas", "Najlepsza restauracja") */
+.item h2 {
+    font-family: "Poppins", sans-serif; /* Lub inna ozdobna czcionka */
+    color: #d4af37; /* Złoty kolor - klucz do elegancji! */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Wielkie litery */
+    letter-spacing: 2px;       /* Rozstrzelone litery */
+    font-weight: 600;
+}
+
+/* Zwykły tekst */
+.item p {
+    font-size: 1.05rem;
+    line-height: 1.8; /* Większy odstęp między liniami = łatwiejsze czytanie */
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Lista punktowa (np. Lokalne produkty) */
+.item ul {
+    list-style: none; /* Usuwamy standardowe kropki */
+    padding: 0;
+    display: inline-block; /* Żeby lista była wyśrodkowana jako blok */
+    text-align: left;      /* Tekst w liście wyrównany do lewej */
+    margin-top: 10px;
+}
+
+.item ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Dodajemy własny "złoty punktor" przed każdym elementem listy */
+.item ul li::before {
+    content: '✦';      /* Ozdobny znaczek (możesz zmienić na • lub -) */
+    color: #d4af37;    /* Złoty kolor */
+    font-size: 1.2rem;
+}
+
+/* --- Responsywność dla kart na telefonie --- */
+@media (max-width: 768px) {
+    .article {
+        padding: 80px 15px 80px; /* Mniejsze marginesy na telefonie */
+    }
+    
+    .item {
+        padding: 25px; /* Mniej miejsca w środku na małym ekranie */
+    }
+    
+    .item h2 {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;    
+    background: #000;
+    color: white;
+    font-weight: bold;
+    
+    
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;     
+}
+
+
+

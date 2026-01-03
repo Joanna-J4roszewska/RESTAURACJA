@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <link rel="stylesheet" href="restauracjagaleria.css" type="text/css">
+    <link rel="stylesheet" href="restauracjatlo.css">
+    <link rel="stylesheet" href="restauracjamenu.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <title>Projekt</title>
+</head>
+
+<body>
+
+    
+    <header class="header">
+    <a href="#" class="logo"><i class='bx bxs-bowl-hot' ></i> BISTRO</a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-heart-circle' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        <a href="#" style="--i:0;">Strona Głowna</a>
+        <a href="#" style="--i:1;">Menu</a>
+
+        <div class="dropdown-container">
+            <a href="#" style="--i:2;">Kontakt <i class='bx bx-chevron-down'></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">+38 593 238 483</a></li>
+                <li><a href="#">Bistro1@gmail.com</a></li>
+            </ul>
+        </div>
+        <a href="#" style="--i:3;">O nas</a>
+        <a href="#" style="--i:4;">Rezerwacje</a>
+    </nav>
+</header>
+    
+    <main class="article">
+
+        
+        <div class="item">
+            <h2>Najlepsza restauracja w sercu Żuław</h2>
+            <p>
+                Kameralny, zabytkowy obiekt z wyjątkową kuchnią i rodzinną atmosferą.
+                Idealne miejsce na odpoczynek, rodzinny obiad lub bazę wypadową do
+                Trójmiasta i Malborka.
+            </p>
+        </div>
+
+       
+        <div class="galeria-container">
+
+            <button class="przycisk poprzedni">
+                <img src="strzalka.jpg" alt="Poprzednie">
+            </button>
+
+            <div class="slajdy">
+                <img src="jedzenie.jpg" alt="Zdjęcie 1">
+                <img src="jedzenie1.jpg" alt="Zdjęcie 2">
+                <img src="jedzenie3.jpg" alt="Zdjęcie 3">
+                <img src="jedzenie4.jpg" alt="Zdjęcie 4">
+            </div>
+
+            <button class="przycisk nastepny">
+                <img src="strzalka.jpg" alt="Następne">
+            </button>
+
+        </div>
+
+       
+        <div class="item">
+            <h2>O nas</h2>
+
+            <p><strong>Tradycja i nowoczesność</strong></p>
+
+            <p>
+                Willa Bistro to miejsce z duszą – łączymy tradycję z nowoczesnością,
+                dbając o każdy detal wystroju i smaku. Nasza historia to lata
+                doświadczeń, pasji i rodzinnej atmosfery.
+            </p>
+
+            <ul>
+                <li>Lokalne produkty</li>
+                <li>Rodzinna atmosfera</li>
+                <li>Kuchnia regionalna</li>
+                <li>Komfortowe pokoje</li>
+            </ul>
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <p>&copy; ₊‧°𐐪♡𐑂°‧₊ BISTRO ₊‧°𐐪♡𐑂°‧₊</p>
+    </footer>
+
+  
+    <script src="restauracja.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+
+.galeria-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    border: 3px solid #cecece;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.slajdy {
+    display: flex;
+    width: 100%;
+}
+
+.slajdy img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+    object-fit: cover;
+}
+
+
+.przycisk {
+    position: absolute;
+    z-index: 10;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.przycisk img {
+    width: 40px;
+    height: auto;
+    display: block;
+ filter: drop-shadow(1px 1px 0px white) 
+            drop-shadow(-1px -1px 0px white)
+            drop-shadow(1px -1px 0px white)
+            drop-shadow(-1px 1px 0px white);
+}
+
+
+.przycisk.poprzedni {
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+}
+
+
+.przycisk.nastepny {
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 10px;
+}
+
+
+.przycisk.nastepny img {
+    transform: scaleX(-1);
+}
+
+.przycisk:active {
+    transform: scale(0.9); /* Zmniejszamy przycisk do 90% */
+    transition: transform 0.1s; /* Bardzo szybka animacja */
+}
